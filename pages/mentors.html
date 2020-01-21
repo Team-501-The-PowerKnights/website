@@ -20,30 +20,82 @@
   <body>
     <header>
       <h2></h2>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li>
-            <button>About</button>
-            <div>
-              <a href="./about-us.html">About Us</a>
-              <a href="./mentors.html">Mentors</a>
-              <a href="./students.html">Students</a>
-              <a href="./robots.html">Robots</a>
-            </div>
-          </li>
-          <li><a href="./calendar.html">Calendar</a></li>
-          <li><a href="./contact-us.html">Contact Us</a></li>
-          <li>
-            <button>Resources</button>
-            <div>
-              <a href="./newsletters.html">Monthly Newsletters</a>
-              <a href="./forms.html">Team Forms</a>
-              <a href="./faq.html">FAQ</a>
-              <a href="./donate.html">Donate</a>
-            </div>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navBarCollapsible"
+          aria-controls="navBarCollapsible"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarCollapsible">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="./about-us.html"
+                  >About Us</a
+                >
+                <a class="dropdown-item active" href="./mentors.html"
+                  >Mentors</a
+                >
+                <a class="dropdown-item" href="./students.html"
+                  >Students</a
+                >
+                <a class="dropdown-item" href="./robots.html">Robots</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="resourcesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <a class="dropdown-item" href="./newsletters.html"
+                  >Monthly Newsletters</a
+                >
+                <a class="dropdown-item" href="./forms.html"
+                  >Team Forms</a
+                >
+                <a class="dropdown-item" href="./faq.html">FAQ</a>
+                <a class="dropdown-item" href="./donate.html">Donate</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
