@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="http://powerknights.com/">
-		<img src="./images/black-powerKnights-logo.png" width="200" height="200">
+		<img src="./assets/images/black-powerKnights-logo.png" width="200" height="200">
 	</a>
 	<h1>Website</h1>
 	<p>
