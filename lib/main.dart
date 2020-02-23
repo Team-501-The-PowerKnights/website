@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: HomePage(),
       title: "Team 501 The PowerKnights",
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -21,7 +22,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Team 501 The PowerKnights"),
+        title: Text(
+          "Team 501 The PowerKnights",
+          style: TextStyle(
+            fontFamily: "Tomorrow",
+          ),
+        ),
       ),
     );
   }
