@@ -1,34 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'package:powerknights_website/screens/home.dart';
+import 'package:powerknights_website/themes.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+void main() => runApp(PowerKnightsWebsite());
 
+class PowerKnightsWebsite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _themes = Themes();
     return MaterialApp(
-      home: HomePage(),
+      home: HomeScreen(),
       title: "Team 501 The PowerKnights",
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Team 501 The PowerKnights",
-          style: TextStyle(
-            fontFamily: "Tomorrow",
-          ),
-        ),
-      ),
+      theme: _themes.lightTheme(),
+      darkTheme: _themes.darkTheme(),
     );
   }
 }
