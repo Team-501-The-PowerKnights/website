@@ -6,8 +6,6 @@
 	<p>
 		<b>🌍 New Website for the Team 501 The PowerKnights</b>
 	</p>
-    <a href="https://twitter.com/PowerKnights501"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PowerKnights501?style=social"></a>
-    <br>
     <a href="https://github.com/Team-501-The-PowerKnights/Website/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Team-501-The-PowerKnights/Website"></a>
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/Team-501-The-PowerKnights/Website?style=social">
 </div>
