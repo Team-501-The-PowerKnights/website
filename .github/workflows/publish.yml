@@ -10,9 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: subosito/flutter-action@v1
+      - uses: subosito/flutter-action@v1.3.2
         with:
-          channel: "beta"
+          channel: 'beta'
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web
@@ -25,11 +25,12 @@ jobs:
           sh replace.sh
           rm -rf README.md
           touch README.md
+          TZ=America/New_York date
           date >> README.md
           git add .
-          git commit -m "⬆️ Publish Latest Changes"
+          git commit -m "🚀 Publish Latest Changes"
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "gh-pages"
+          branch: 'gh-pages'
