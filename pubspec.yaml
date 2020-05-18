@@ -22,3 +22,6 @@ flutter:
     - family: Tomorrow
       fonts:
         - asset: assets/fonts/Tomorrow-Regular.ttf
+
+import_sorter:
+  emojis: true
