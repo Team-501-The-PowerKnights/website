@@ -2,11 +2,92 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="description" content="" />
-		<link rel="icon" href="%svelte.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Team 501 the PowerKnights" />
+
+		<!-- GENERIC ICONS -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta name="theme-color" content="#ffffff" />
+
 		%svelte.head%
 	</head>
+
+	<link
+		id="light-mode-icon"
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/icons/light-mode/favicon-32x32.png"
+	/>
+	<link
+		id="light-mode-icon"
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/icons/light-mode/favicon-16x16.png"
+	/>
+	<link
+		id="light-mode-icon"
+		rel="mask-icon"
+		href="/icons/light-mode/safari-pinned-tab.svg"
+		color="#000000"
+	/>
+	<link id="light-mode-icon" rel="icon" href="/icons/light-mode/favicon.ico" />
+
+	<link
+		id="dark-mode-icon"
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="/icons/dark-mode/favicon-32x32.png"
+	/>
+	<link
+		id="dark-mode-icon"
+		rel="icon"
+		type="image/png"
+		sizes="16x16"
+		href="/icons/dark-mode/favicon-16x16.png"
+	/>
+	<link
+		id="dark-mode-icon"
+		rel="mask-icon"
+		href="/icons/dark-mode/safari-pinned-tab.svg"
+		color="#000000"
+	/>
+	<link id="dark-mode-icon" rel="icon" href="/icons/dark-mode/favicon.ico" />
+
+	<script>
+		const lightModeIcons = document.querySelectorAll('link#light-mode-icon');
+		const darkModeIcons = document.querySelectorAll('link#dark-mode-icon');
+
+		const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+		matcher.addListener(onUpdate);
+		onUpdate();
+
+		function onUpdate() {
+			console.log(matcher.matches);
+			if (matcher.matches) {
+				for (const icon of lightModeIcons) {
+					icon.remove();
+				}
+				for (const icon of darkModeIcons) {
+					document.head.append(icon);
+					icon.remove();
+				}
+			} else {
+				console.log(lightModeIcons);
+				for (const icon of darkModeIcons) {
+					icon.remove();
+				}
+				for (const icon of lightModeIcons) {
+					document.head.append(icon);
+					icon.remove();
+				}
+			}
+		}
+	</script>
 	<body>
 		<div id="svelte">%svelte.body%</div>
 	</body>

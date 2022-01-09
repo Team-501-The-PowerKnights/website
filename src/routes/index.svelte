@@ -2,6 +2,14 @@
 	import Logo from '../components/Logo.svelte';
 </script>
 
+<svelte:head>
+	<meta
+		name="description"
+		content="First Robotics Team from Goffstown and West High School from New Hampshire"
+	/>
+	<title>The PowerKnights</title>
+</svelte:head>
+
 <main>
 	<div class="left">
 		<Logo />
