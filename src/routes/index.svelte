@@ -1,5 +1,12 @@
+<script>
+	import Logo from '../components/Logo.svelte';
+</script>
+
 <main>
-	<h1>This site is a W.I.P</h1>
+	<div class="left">
+		<Logo />
+		<h1>The PowerKnights</h1>
+	</div>
 </main>
 
 <style>
@@ -9,5 +16,11 @@
 		justify-content: center;
 		width: 100vw;
 		height: 100vh;
+	}
+
+	h1 {
+		font-size: 5rem;
+		text-decoration: solid underline;
+		margin: 0;
 	}
 </style>
