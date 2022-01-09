@@ -5,7 +5,7 @@
 			fill="black"
 		/>
 		<path
-			id="five"
+			class="five"
 			d="M19.5029 107.529H128.715C130.371 107.501 132.001 107.115 133.493 106.397C135.246 105.604 136.878 104.564 138.337 103.309C139.715 102.132 140.918 100.764 141.909 99.2462C142.601 98.2931 143.008 97.1636 143.084 95.9886V54.1249H45.7086V38.2974H143.053V19.5271H19.5331V72.9315H116.86V88.759H19.5029V107.529Z"
 			fill="black"
 			stroke="white"
@@ -13,7 +13,7 @@
 			stroke-miterlimit="10"
 		/>
 		<path
-			id="zero"
+			class="zero"
 			d="M164.815 107.529H286.458V19.5089H164.815V107.529ZM260.083 88.759H191.021V38.1339H260.083V88.759Z"
 			fill="black"
 			stroke="white"
@@ -21,13 +21,18 @@
 			stroke-miterlimit="10"
 		/>
 		<path
-			id="one"
+			class="one"
 			d="M307.983 107.529H380.491V88.759H357.313V19.5089H308.195V38.1339H330.925V88.7409H307.983V107.529Z"
 			fill="black"
 			stroke="white"
 			stroke-width="6"
 			stroke-miterlimit="10"
 		/>
+		<!-- Fixes weird pathing issues caused by animation -->
+		<rect x="16.5" y="104.5" width="6" height="6" fill="white" />
+		<rect x="161.8" y="104.53" width="6" height="6" fill="white" />
+		<rect x="305" y="104.5" width="6" height="6" fill="white" />
+		<rect x="257.1" y="85.75" width="6" height="6" fill="white" />
 	</g>
 	<defs>
 		<clipPath id="clip0_5_36">
@@ -37,35 +42,34 @@
 </svg>
 
 <style>
-	#five {
+	.five {
 		stroke-dasharray: 806.2493286132812;
 		stroke-dashoffset: 806.2493286132812;
 	}
 
-	#zero {
+	.zero {
 		stroke-dasharray: 658.700439453125;
 		stroke-dashoffset: 658.700439453125;
 	}
 
-	#one {
+	.one {
 		stroke-dasharray: 366.51617431640625;
 		stroke-dashoffset: 366.51617431640625;
 	}
 
-	#five,
-	#zero,
-	#one {
+	.five,
+	.zero,
+	.one {
 		animation: sign 3s forwards;
+	}
+
+	.zero {
+		animation-duration: 6.6s;
 	}
 
 	@keyframes sign {
 		to {
 			stroke-dashoffset: 0;
-		}
-	}
-
-	@keyframes tie {
-		99% {
 		}
 	}
 </style>
