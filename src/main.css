@@ -1,0 +1,11 @@
+body {
+	margin: 0;
+	font-family: 'Inter';
+	background-color: black;
+	color: white;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/inter.otf');
+}
