@@ -12,7 +12,7 @@
 
 <main>
 	<div class="left">
-		<Logo />
+		<Logo animated />
 		<h1>The PowerKnights</h1>
 	</div>
 </main>

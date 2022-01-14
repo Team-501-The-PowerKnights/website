@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let animated = false;
+</script>
+
 <svg width="400" height="128" viewBox="0 0 400 128" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0_5_36)">
 		<path
@@ -41,35 +45,37 @@
 	</defs>
 </svg>
 
-<style>
-	.five {
-		stroke-dasharray: 806.2493286132812;
-		stroke-dashoffset: 806.2493286132812;
-	}
-
-	.zero {
-		stroke-dasharray: 658.700439453125;
-		stroke-dashoffset: 658.700439453125;
-	}
-
-	.one {
-		stroke-dasharray: 366.51617431640625;
-		stroke-dashoffset: 366.51617431640625;
-	}
-
-	.five,
-	.zero,
-	.one {
-		animation: sign 3s forwards;
-	}
-
-	.zero {
-		animation-duration: 6.6s;
-	}
-
-	@keyframes sign {
-		to {
-			stroke-dashoffset: 0;
+{#if animated}
+	<style>
+		.five {
+			stroke-dasharray: 806.2493286132812;
+			stroke-dashoffset: 806.2493286132812;
 		}
-	}
-</style>
+
+		.zero {
+			stroke-dasharray: 658.700439453125;
+			stroke-dashoffset: 658.700439453125;
+		}
+
+		.one {
+			stroke-dasharray: 366.51617431640625;
+			stroke-dashoffset: 366.51617431640625;
+		}
+
+		.five,
+		.zero,
+		.one {
+			animation: sign 3s forwards;
+		}
+
+		.zero {
+			animation-duration: 6.6s;
+		}
+
+		@keyframes sign {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	</style>
+{/if}
