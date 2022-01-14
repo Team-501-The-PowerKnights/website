@@ -1,8 +1,22 @@
+/* dark mode colors */
+:root {
+	--background: black;
+	--foreground: white;
+}
+
+/* light mode colors */
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: white;
+		--foreground: black;
+	}
+}
+
 body {
 	margin: 0;
 	font-family: 'Inter';
-	background-color: black;
-	color: white;
+	background-color: var(--background);
+	color: var(--foreground);
 }
 
 img {
