@@ -14,6 +14,7 @@
 	}
 }
 
+html,
 body {
 	margin: 0;
 	font-family: 'Inter';
@@ -61,7 +62,7 @@ h1 {
 }
 
 h2 {
-	font-size: clamp(20px, 3vw, 4rem);
+	font-size: clamp(20px, 3vw, 1.8rem);
 }
 
 @font-face {
