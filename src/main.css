@@ -38,3 +38,9 @@ a:visited {
 	font-family: 'Inter';
 	src: url('/fonts/inter.otf');
 }
+
+@font-face {
+	font-family: 'Space Mono';
+	src: url('/fonts/spacemono-italic.ttf');
+	font-style: italic;
+}

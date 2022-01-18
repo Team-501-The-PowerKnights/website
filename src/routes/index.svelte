@@ -18,11 +18,11 @@
 		<h2>FIRST Robotics Team from Manchester, New Hampshire</h2>
 	</div>
 	<div class="right">
-		<Button href="/about">About Us</Button>
-		<Button href="/calendar">Calendar</Button>
-		<Button href="/resources">Resources</Button>
-		<Button href="/contact">Contact</Button>
-		<Button href="/Newsletter">Newsletter</Button>
+		<Button href="/wip">About Us</Button>
+		<Button href="/wip">Calendar</Button>
+		<Button href="/wip">Resources</Button>
+		<Button href="/wip">Contact</Button>
+		<Button href="/wip">Newsletter</Button>
 	</div>
 </main>
 
