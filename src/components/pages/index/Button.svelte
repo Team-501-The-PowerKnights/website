@@ -2,7 +2,7 @@
 	export let href: string;
 </script>
 
-<button class="block"> <a {href}><slot /></a> </button>
+<a {href}><button class="block"> <slot /> </button></a>
 
 <style>
 	button {
@@ -12,10 +12,10 @@
 		font-size: 1.3rem;
 		--block-shadow-color: #black;
 		--block-text-color: white;
+		color: var(--background);
 	}
 
-	a,
-	a:visited {
-		color: var(--background);
+	a {
+		text-decoration: none;
 	}
 </style>
