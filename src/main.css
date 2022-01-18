@@ -1,3 +1,5 @@
+@import url(https://unpkg.com/blocks.css/dist/blocks.min.css);
+
 /* dark mode colors */
 :root {
 	--background: black;
@@ -25,6 +27,11 @@ img {
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+}
+
+a,
+a:visited {
+	color: rgb(0, 119, 255);
 }
 
 @font-face {

@@ -1,11 +1,12 @@
 <script>
+	import Button from '../components/pages/index/Button.svelte';
 	import Logo from '../components/Logo.svelte';
 </script>
 
 <svelte:head>
 	<meta
 		name="description"
-		content="First Robotics Team from Goffstown and West High School from New Hampshire"
+		content="First Robotics Team from Goffstown and West High School in New Hampshire"
 	/>
 	<title>The PowerKnights</title>
 </svelte:head>
@@ -14,6 +15,14 @@
 	<div class="left">
 		<Logo animated />
 		<h1>The PowerKnights</h1>
+		<h2>FIRST Robotics Team from Manchester, New Hampshire</h2>
+	</div>
+	<div class="right">
+		<Button href="/about">About Us</Button>
+		<Button href="/calendar">Calendar</Button>
+		<Button href="/resources">Resources</Button>
+		<Button href="/contact">Contact</Button>
+		<Button href="/Newsletter">Newsletter</Button>
 	</div>
 </main>
 
@@ -24,6 +33,12 @@
 		justify-content: center;
 		width: 100vw;
 		height: 100vh;
+		gap: 100px;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
 	}
 
 	h1 {
