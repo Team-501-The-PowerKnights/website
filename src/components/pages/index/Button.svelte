@@ -10,12 +10,18 @@
 		border: none;
 		padding: 15px;
 		font-size: 1.3rem;
-		--block-shadow-color: #black;
-		--block-text-color: white;
-		color: var(--background);
+		--block-shadow-color: var(--background);
+		--block-text-color: var(--foreground);
+		color: var(--foreground);
 	}
 
 	a {
 		text-decoration: none;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		button {
+			color: var(--background);
+		}
 	}
 </style>
