@@ -77,6 +77,11 @@
 {/if}
 
 <style>
+	svg {
+		width: clamp(10px, 8vw 400px);
+		max-width: 90vw;
+	}
+
 	.background-fill {
 		fill: var(--background);
 	}

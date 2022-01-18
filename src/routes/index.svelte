@@ -13,7 +13,9 @@
 
 <main>
 	<div class="left">
-		<Logo animated />
+		<div class="logo">
+			<Logo animated />
+		</div>
 		<h1>The PowerKnights</h1>
 		<h2>FIRST Robotics Team from Manchester, New Hampshire</h2>
 	</div>
@@ -31,9 +33,24 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100vw;
+		width: 90vw;
 		height: 100vh;
 		gap: 100px;
+	}
+
+	h1 {
+		text-decoration: solid underline;
+		padding-bottom: 5px;
+	}
+
+	.left {
+		max-width: 90vw;
+	}
+
+	.logo {
+		position: relative;
+		left: -15px;
+		bottom: -15px;
 	}
 
 	.right {
@@ -41,9 +58,18 @@
 		flex-direction: column;
 	}
 
-	h1 {
-		font-size: 5rem;
-		text-decoration: solid underline;
-		margin: 0;
+	@media screen and (max-width: 400px) {
+		main {
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		.right {
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 </style>

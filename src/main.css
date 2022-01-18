@@ -19,6 +19,9 @@ body {
 	font-family: 'Inter';
 	background-color: var(--background);
 	color: var(--foreground);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 img {
@@ -32,6 +35,33 @@ img {
 a,
 a:visited {
 	color: rgb(0, 119, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: clamp(35px, 4vw, 5rem);
+}
+
+h2 {
+	font-size: clamp(20px, 3vw, 4rem);
 }
 
 @font-face {

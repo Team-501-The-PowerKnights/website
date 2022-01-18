@@ -15,7 +15,6 @@
 
 	h1 {
 		font-size: 5rem;
-		margin: 0;
 		font-family: 'Space Mono';
 		font-weight: normal;
 		font-style: italic;
